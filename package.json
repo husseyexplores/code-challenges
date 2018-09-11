@@ -1,0 +1,19 @@
+{
+  "name": "code-challenges",
+  "version": "1.0.0",
+  "description": "code-challenges",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/husseyexplores/code-challenges.git"
+  },
+  "author": "husseyexplores",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/husseyexplores/code-challenges/issues"
+  },
+  "homepage": "https://github.com/husseyexplores/code-challenges#readme"
+}
