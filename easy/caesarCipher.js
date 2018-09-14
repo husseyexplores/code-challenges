@@ -2,7 +2,7 @@ const caesar = (string, shift) => {
   return string.split('').map(char => charShift(char, shift)).join('');
 };
 
-const codeSet = code => code > 97 ? 97 : 65;
+const codeSet = code => code >= 97 ? 97 : 65;
 
 const mod = (n, m) => ((n % m) + m) % m;
 
