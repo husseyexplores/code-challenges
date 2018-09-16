@@ -12,7 +12,8 @@ If your language provides a method in the standard library that does this look-u
 */
 
 const leapYear = year => {
-
+  // 
+  return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
 };
 
 module.exports = leapYear;
