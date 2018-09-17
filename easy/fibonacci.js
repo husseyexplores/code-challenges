@@ -12,12 +12,16 @@ fibonacci(6) // returns 8
 */
 
 const fibonacci = n => {
+  if (n < 0) return false;
+
+  n = Math.abs(n);
+
   let preNum = 0;
   let currNum = 1;
   let result = 0;
 
-  for (let i = 0; i <= i; i++) {
-    result += preNum + currNum;
+  for (let i = 1; i < n; i++) {
+    result = preNum + currNum;
     preNum = currNum;
     currNum = result;
   }
