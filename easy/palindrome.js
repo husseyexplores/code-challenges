@@ -19,8 +19,9 @@ palindromes('tacos') // false
 */
 
 const isPalindrome = str => {
-  const newStr = str.split('').reverse().join('');
-  return newStr === str;
+  const newStr = str.toLowerCase().replace(/[^a-z]/g, '');
+
+  return newStr.split('').reverse().join('') === newStr;
 }
 
-module.exports = palindrome;
+module.exports = isPalindrome;
