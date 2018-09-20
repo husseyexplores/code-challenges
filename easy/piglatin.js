@@ -7,7 +7,7 @@ https://en.wikipedia.org/wiki/Pig_Latin
 The rules section will give the rules and the examples that are required to complete this exercise.
 */
 
-const pigLatin = str = < {
+const pigLatin = str => {
 
 }
 
