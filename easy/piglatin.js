@@ -8,7 +8,11 @@ The rules section will give the rules and the examples that are required to comp
 */
 
 const pigLatin = str => {
+  const firstLetter = str[0].toLowerCase();
 
+  if (firstLetter.match(/[^a|e|i|o|u]/g)) {
+
+  }
 }
 
 module.exports = pigLatin;
