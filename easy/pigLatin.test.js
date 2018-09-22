@@ -61,4 +61,9 @@ describe('#translate', function () {
     s = pigLatin("the quick brown fox");
     expect(s).toEqual("ethay ickquay ownbray oxfay");
   });
+
+  it('handles non-vowels words', function () {
+    s = pigLatin("rhythm");
+    expect(s).toEqual("rhythm");
+  });
 });

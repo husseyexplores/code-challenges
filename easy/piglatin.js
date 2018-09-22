@@ -24,7 +24,11 @@ const translateWord = word => {
   }
 
 
-  if (word.includes('qu')) {
+  if (firstVowelIdx == undefined) {
+    result = word;
+    console.log(result);
+    return result;
+  } else if (word.includes('qu')) {
     // 'qu' case
     const quIdx = word.indexOf('qu');
     result = word.slice(quIdx + 2) + word.slice(0, quIdx + 2) + 'ay';
