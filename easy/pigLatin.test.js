@@ -19,46 +19,46 @@ const pigLatin = require("./pigLatin.js");
 
 describe('#translate', function () {
   it('translates a word beginning with a vowel', function () {
-    s = pigLatin.translate("apple");
+    s = pigLatin("apple");
     expect(s).toEqual('appleay');
   });
 
   it('translates a word beginning with a consonant', function () {
-    s = pigLatin.translate("banana");
+    s = pigLatin("banana");
     expect(s).toEqual("ananabay");
   });
 
   it('translates a word beginning with two consonants', function () {
-    s = pigLatin.translate("cherry");
+    s = pigLatin("cherry");
     expect(s).toEqual('errychay');
   });
 
   it('translates two words', function () {
-    s = pigLatin.translate("eat pie");
+    s = pigLatin("eat pie");
     expect(s).toEqual('eatay iepay');
   });
 
   it('translates a word beginning with three consonants', function () {
-    expect(pigLatin.translate("three")).toEqual("eethray");
+    expect(pigLatin("three")).toEqual("eethray");
   });
 
   it('counts "sch" as a single phoneme', function () {
-    s = pigLatin.translate("school");
+    s = pigLatin("school");
     expect(s).toEqual("oolschay");
   });
 
   it('counts "qu" as a single phoneme', function () {
-    s = pigLatin.translate("quiet");
+    s = pigLatin("quiet");
     expect(s).toEqual("ietquay");
   });
 
   it('counts "qu" as a consonant even when its preceded by a consonant', function () {
-    s = pigLatin.translate("square");
+    s = pigLatin("square");
     expect(s).toEqual("aresquay");
   });
 
   it('translates many words', function () {
-    s = pigLatin.translate("the quick brown fox");
+    s = pigLatin("the quick brown fox");
     expect(s).toEqual("ethay ickquay ownbray oxfay");
   });
 });
