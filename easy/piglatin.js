@@ -26,7 +26,6 @@ const translateWord = word => {
 
   if (firstVowelIdx == undefined) {
     result = word;
-    console.log(result);
     return result;
   } else if (word.includes('qu')) {
     // 'qu' case
