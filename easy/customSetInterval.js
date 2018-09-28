@@ -2,6 +2,10 @@
  * Implement setInterval using setTimeout in javascript
  */
 
-function customSetInterval(cb, interval) {
+const customSetInterval = (cb, interval) => {
 
 }
+
+/*
+  When will you actually solve this?
+*/
