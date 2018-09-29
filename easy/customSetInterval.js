@@ -4,19 +4,15 @@
 
 const customSetInterval = (callback, interval) => {
   return setTimeout(() => {
-    if (typeof callback === 'function') {
+    if (typeof callback === "function") {
       callback();
       customSetInterval(callback, interval);
     } else {
-      console.error(new Error('Expecting a function as an argument.'));
+      console.error(new Error("Expecting a function as an argument."));
     }
   }, interval);
-}
+};
 
 const clearCustomSetInterval = id => {
   clearTimeout(id);
-}
-
-/*
-  When will you actually solve this?
-*/
+};
